@@ -14,32 +14,176 @@ D'Baesics Ecommerce and Inventory Management System is a Java Spring Boot-based 
 - **Inventory Management**: Admin dashboard for efficient inventory control.
 - **Real-time Shipping Updates**: Track order status and receive timely shipping updates.
 
-## User Stories
+# Online Shopping Platform
 
-### For the Shopper:
+## User Stories (For the User):
 
-#### Add Items to Shopping Cart
+### Story 1
+As a shopper, I need to be able to add items to my shopping cart so I can purchase them.
 
-**Acceptance Criteria**
-- Select an item and click the "Add to Cart" button.
-- Verify that the selected item is successfully added to the cart.
+**Acceptance Criteria:**
+- Select item, click button to add item to cart.
+- Item is in cart.
 
-#### View Shopping Cart
+**Size:** SMALL
 
-**Acceptance Criteria**
-- Add items to the cart.
-- Navigate to the "View Cart" section.
-- Confirm that the added items are displayed.
+### Story 2
+As a shopper, I need to be able to view the items in my shopping cart so I can decide if I want to purchase them.
 
-### For the Business Owner:
+**Acceptance Criteria:**
+- Select item, add to cart.
+- Select link to “view cart” and item is present.
 
-#### Efficient Inventory Management
+**Size:** MEDIUM
 
-**Acceptance Criteria**
-- Add new products with details such as name, category, price, and quantity.
-- Update product information, including price and quantity.
-- Mark products as out of stock or remove them from the inventory.
-- Receive real-time updates on product availability.
+### Story 3
+As a shopper, I want to be able to update the quantity of items in my shopping cart so I can adjust my purchase quantity.
+
+**Acceptance Criteria:**
+- In the cart view, change the quantity of a selected item.
+- Total price is updated accordingly.
+
+**Size:** SMALL
+
+### Story 4
+As a shopper, I need the ability to remove items from my shopping cart in case I change my mind about a purchase.
+
+**Acceptance Criteria:**
+- In the cart view, click a button to remove a selected item.
+- Cart is updated without that item.
+
+**Size:** SMALL
+
+### Story 5
+As a shopper, I want to see the total cost of the items in my shopping cart, including taxes and any applied discounts.
+
+**Acceptance Criteria:**
+- Cart view displays the total cost with a detailed breakdown.
+
+**Size:** MEDIUM
+
+### Story 6
+As a shopper, I need the option to apply a promotional code or voucher to my shopping cart to avail discounts.
+
+**Acceptance Criteria:**
+- During checkout, a field to enter a promotional code.
+- Applying it reflects the discounted price.
+
+**Size:** MEDIUM
+
+### Story 7
+As a shopper, I want to proceed to the checkout page with a single click to save time, using Stripe API.
+
+**Acceptance Criteria:**
+- Prominent and easily accessible "Checkout" button in the cart view.
+- Leads directly to the checkout page.
+
+**Size:** SMALL
+
+### Story 8
+As a shopper, I need to enter my shipping address during checkout to ensure accurate delivery.
+
+**Acceptance Criteria:**
+- Checkout process includes a step for entering and validating the shipping address.
+
+**Size:** MEDIUM
+
+### Story 9
+As a shopper, I want to select my preferred payment method during checkout for a seamless payment experience.
+
+**Acceptance Criteria:**
+- Checkout process includes a step for choosing a payment method.
+
+**Size:** MEDIUM
+
+### Story 10
+As a shopper, I want to receive an order confirmation email after completing my purchase.
+
+**Acceptance Criteria:**
+- Email sent to the shopper's registered email address confirming the order details.
+
+**Size:** SMALL
+
+### Story 11
+As a shopper, I need the option to save multiple shipping addresses for future orders.
+
+**Acceptance Criteria:**
+- User profile includes a feature to add and manage multiple shipping addresses.
+
+**Size:** MEDIUM
+
+### Story 12
+As a shopper, I want to see real-time shipping updates and tracking information for my order.
+
+**Acceptance Criteria:**
+- After completing the purchase, track the order status and receive timely updates on shipping progress.
+
+**Size:** LARGE
+
+## User Stories (For the Business Owner):
+
+### Managing Inventory:
+
+### Story 13
+As a business owner, I want to efficiently manage the inventory of products in my store.
+
+**Acceptance Criteria:**
+1. Add new products to the inventory with details (name, category, price, quantity).
+2. Update product information, including price and quantity.
+3. Mark products as out of stock or remove them.
+4. System provides real-time updates on product quantity.
+
+**Size:** MEDIUM
+
+### Sales Report:
+
+### Story 14
+As a business owner, I want to generate comprehensive sales reports to track the performance of my store.
+
+**Acceptance Criteria:**
+1. Generate a sales report for a specific time period.
+2. Report shows total revenue, number of orders, and average order value.
+3. Break down sales by product, indicating best-selling items.
+4. Allow export of the sales report in downloadable format (e.g., CSV, PDF).
+
+**Size:** LARGE
+
+### Customer Management:
+
+### Story 15
+As a business owner, I want to manage customer information and track their purchasing history.
+
+**Acceptance Criteria:**
+1. View a list of registered customers with names and contact details.
+2. View a customer's past orders, including dates and purchased items.
+3. Add notes or tags to individual customer profiles.
+
+**Size:** MEDIUM
+
+### Discount Management:
+
+### Story 16
+As a business owner, I want the ability to create and manage discounts for promotional purposes.
+
+**Acceptance Criteria:**
+1. Create discount codes with specified conditions.
+2. System applies discounts automatically during checkout.
+3. Set expiration dates for discount codes.
+4. Track usage and effectiveness of each discount code.
+
+**Size:** MEDIUM
+
+### Order Tracking:
+
+### Story 17
+As a business owner, I want to easily track and manage the status of customer orders.
+
+**Acceptance Criteria:**
+1. System provides a dashboard displaying the current status of all orders.
+2. Filter orders by status (e.g., pending, shipped, delivered).
+3. Receive timely notifications for critical order events.
+
+**Size:** SMALL
 
 ## System Architecture
 
